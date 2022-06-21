@@ -297,9 +297,9 @@ class _PhoneFieldHintState extends State<_PhoneFieldHint> {
   Widget build(BuildContext context) {
     final decoration = widget.decoration ??
         InputDecoration(
-          suffixIcon: Platform.isAndroid
+          prefixIcon: Platform.isAndroid
               ? IconButton(
-                  icon: Icon(Icons.phonelink_setup),
+                  icon: Icon(Icons.phone),
                   onPressed: () async {
                     _hintShown = true;
                     await _askPhoneHint();
